@@ -11,6 +11,7 @@ This a repository with a sample config that provides all features required to de
 - [SwiftLint](https://github.com/realm/SwiftLint) - code linter
 - [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) - code formatter
 - [xcbeautify](https://github.com/cpisciotta/xcbeautify) - Xcode logs formatter
+- [luarocks](https://luarocks.org) - Lua package manager
 
 ## Installation
 
@@ -20,6 +21,7 @@ Please make sure to install all dependencies and get familiar with [xcodebuild.n
 brew install xcode-build-server
 brew install xcbeautify
 brew install swiftlint
+brew install luarocks
 brew install swiftformat
 brew install ruby
 gem install xcodeproj
