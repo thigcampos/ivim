@@ -1,6 +1,6 @@
-# ios-dev-starter-nvim
+# iVim
 
-This a repository with a sample config that provides all features required to develop iOS and macOS apps in Neovim.
+This a repository with a sample config that provides all features required to develop iOS and macOS apps in Neovim, forked from [wojciech-kulik/ios-dev-starter-nvim](https://github.com/wojciech-kulik/ios-dev-starter-nvim).
 
 ## Requirements
 
@@ -14,7 +14,7 @@ This a repository with a sample config that provides all features required to de
 
 ## Installation
 
-Please make sure to install all dependencies and get familiar with [README.md from xcodebuild.nvim repository](https://github.com/wojciech-kulik/xcodebuild.nvim).
+Please make sure to install all dependencies and get familiar with [xcodebuild.nvim](https://github.com/wojciech-kulik/xcodebuild.nvim):
 
 ```
 brew install xcode-build-server
@@ -26,15 +26,17 @@ gem install xcodeproj
 python3 -m pip install -U pymobiledevice3
 ```
 
-## Trying Out This Config
-
-If you want to just try this config without affecting your own. You can check out this repository to your `~/.config` directory and run:
-
-```bash
-NVIM_APPNAME=ios-dev-starter-nvim nvim
+Then, you will need to clone this repository:
+```
+git clone https://github.com/thigcampos/ivim ˜/.config/ivim
 ```
 
-## Basic Key Bindings
+Finally, add an alias to make it easier to launch this setup:
+```
+alias ivim='NVIM_APPNAME=ivim nvim'
+```
+
+## Key Bindings
 
 `<leader>` = `space`
 
@@ -53,12 +55,8 @@ NVIM_APPNAME=ios-dev-starter-nvim nvim
 - `<leader>ff` - Telescope find file
 - `<leader>tt` - toggle Trouble
 
-## Full Tutorial
+## More Info
 
-This repository is a complementary project for my blog post: [The Complete Guide To iOS & macOS Development In Neovim](https://wojciechkulik.pl/ios/the-complete-guide-to-ios-macos-development-in-neovim).
+This repository is based on a complementary project for Wojciech's blog post: [The Complete Guide To iOS & macOS Development In Neovim](https://wojciechkulik.pl/ios/the-complete-guide-to-ios-macos-development-in-neovim).
 
 Please read it to learn how to use this config.
-
-## Xcodebuild.nvim
-
-If you already have your setup, you may want to check out just my [xcodebuild.nvim](https://github.com/wojciech-kulik/xcodebuild.nvim) plugin that adds actions like build, run, and test for iOS and macOS apps to your Neovim.
